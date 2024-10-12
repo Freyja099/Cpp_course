@@ -52,6 +52,7 @@
 // * we have to add 1 if we want to start from 1 and the max = 6 
 // * we can put the function time(0) inside srand directly instead of creating another variable
 
+/*
 // TODO : Rolling a dice
 
 #include <iostream>
@@ -72,7 +73,7 @@ int main()
     return 0;
 }
 
-
+*/
 
 //* In order to generate a random number in cpp we're going to use a function called rand() which is accessible through
 //* the c-stead lib library #include <cstdlib>, the rand function is going to return an integer when you call it, 
@@ -101,3 +102,27 @@ int main()
 //* To simulate rolling a die we have to use modulus to generate a number one through six at random 
 //* the modulus is going to give us the remaindr of integer division, so when we divide any number by 6 there's only six possible remainders
 //* from zero to five since we need that six and we don't need 0, that's why we have to add 1 
+
+
+// * -----------------------------------------------------------------------------------------------------------------------------------------
+
+// * User input : 
+// * if we want to type a string that has spaces we must use the getline function
+// * getline(cin, string);
+// * e.g:
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    string full_name;
+    cout << " Enter your full name : " <<endl;
+    getline(cin , full_name);  
+   // getline(cin >> ws , full_name);
+    cout << full_name;
+    return 0;
+}
+
+// ! there's a problem if we use it before another cin it won't work , we have to change it to getline(cin >> ws , string);
+// * ws stands for white spaces, this portion will eliminate any new line characters or white spaces before any user input 
