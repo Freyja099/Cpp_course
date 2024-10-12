@@ -14,8 +14,17 @@
 // * for long we should add an L at the end, otherwise the compiler will treat the number as an integer 
 // ! uppercase or capital L and F doesn't matter both works perfectly
 
+// * type conversion = conversion a value of one data type to another
+// * it can be done implicit = automatic ; or explicit = precede value with new data type (the new type)
+// * e.g : double x = (int) 3.14; => x = 3
+// * this could be used when we have a division between two int and the result will be a decimal number 
+// * here we can change one of the numbers to a double or when writing the variable that results this division we change one of the variable to not get a 0
+// * e.g :double result = d / (double )n; (saying that d and n were int ) 
+
 // * if we don't want to type the variable type we can use auto e;g :
 // * auto letter ='a '; instead of char letter ='a' ; 
+
+
 
 // * another way to initialize variable is by using braces e.g: int number {1}
 // * this way if we type a variable that doesn't match the type the code won't be compiled unless we correct it, also if we used just {} the 
