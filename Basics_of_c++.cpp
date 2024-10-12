@@ -56,6 +56,10 @@ int main()
 
 // * Mathematical Expressions :
 
+// * Sum : if we want to add a number to our variable we can use multiple ways such as variable += 1 / variable + 1 
+// * same for subtraction : variable -= 1 / variable - 1
+// * multiplication : variable *=2 / variable * 2
+// * division : variable /= 2 or variable / 2
 // * About the division : if we had two integer and we defined the quotient as integer the
 // * result will be just the integer part , to show the integer and decimal part we should
 // * change the nature of the quotient to double and change one of the integer to double
@@ -129,3 +133,32 @@ int main()
     return 0;
 }
 */
+
+// * Part 2 : https://www.youtube.com/watch?v=-TkoO8Z07hI
+
+// * integer is a whole number 
+// * doule is a number including a decimal
+// * char store a single character
+// * boolean has only 2 states : true or false
+// * string is an object that represents a sequence of text ; to declare a string : string variable = " ... ";
+// * in string we have to add a prefix std::string
+
+// * The const keyword specifies that a variable's value is constant tells the compiler to prevent anything from modifying it 
+
+// * namespace = provides a solution for preventing name conflicts in large projects
+// * each entity needs a unique name 
+// * e.g :using a function outside the main 
+// * namespace first { int x = 1; } ; 
+// * namespace second { int x = 2;} ;
+// * in the main function when we want to call the variable we will add a prefix e.g :
+// * cout << first::variable; ( or cout << second::variable;)
+// * or we could add a line insid the main : using namespace first; (or second)
+// * we can use that for string too : using std::string;
+
+// ** typedef and typealiases:
+// * typedef = reserved keyword used to create an additional name (alias)
+// * for another data type , new identifier for an existing type, helps with readability and reduces typos 
+// * it's commonly used when there's a long or complicated data type 
+// * e.g : typedef std::vector<std::pair<std::string ,int>> pairlist_t ; the new name we will be using is pairlist_t 
+// * another way is to use the ' using ' keyword ; e.g : using pairlist_t = std::vector<std::pair<std::string ,int>> 
+
