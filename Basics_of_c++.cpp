@@ -134,6 +134,8 @@ int main()
 }
 */
 
+
+
 // * Part 2 : https://www.youtube.com/watch?v=-TkoO8Z07hI
 
 // * integer is a whole number 
@@ -162,3 +164,9 @@ int main()
 // * e.g : typedef std::vector<std::pair<std::string ,int>> pairlist_t ; the new name we will be using is pairlist_t 
 // * another way is to use the ' using ' keyword ; e.g : using pairlist_t = std::vector<std::pair<std::string ,int>> 
 
+
+
+// * Some useful math related functions :
+
+// * max ( , ) , min( , ) can be used without calling the cmath library
+// * pow(,) power ; sqrt() square root ; abs() absolute value
