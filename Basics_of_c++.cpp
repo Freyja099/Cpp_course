@@ -169,4 +169,28 @@ int main()
 // * Some useful math related functions :
 
 // * max ( , ) , min( , ) can be used without calling the cmath library
-// * pow(,) power ; sqrt() square root ; abs() absolute value
+// * pow(,) power ; sqrt() square root ; abs() absolute value ; round() round like for 3.14 will be 3;
+// * ceil() is like round up for e.g 3.14 will be 4 ; floor() is like round down for e.g 3.99 will be 3
+
+// * Calculating the hypotenus of a right triangle : 
+
+/*
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    double a = 0, b = 0 ; 
+    double c ;
+    cout << " Enter a : "<<a ;
+    cin>> a;
+    cout << "Enter b :"<<b;
+    cin>>b;
+    a = pow(a,2);
+    b = pow (b,2);
+    c = sqrt (a + b);
+    cout << c ;
+    return 0;
+
+}
+*/
