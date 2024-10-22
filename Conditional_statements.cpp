@@ -58,3 +58,12 @@ int main()
 // * Ternary operator = replacement to an if / else statement 
 // * condition? expression 1 : expression 2;
 
+// * Logical Operator
+
+// * && = Check if two conditions are true 
+// * || = Check if at least one of the conditions is true
+// * ! = Reverse the logical state of its operand 
+
+// * to check a boolean variable using if we can just write if(boolean){...}
+// * to check the opposite we can write if (!boolean)
+
