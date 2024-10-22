@@ -55,6 +55,7 @@ int main()
     return 0 ; 
 }
 
+
 // * Ternary operator = replacement to an if / else statement 
 // * condition? expression 1 : expression 2;
 
@@ -67,3 +68,27 @@ int main()
 // * to check a boolean variable using if we can just write if(boolean){...}
 // * to check the opposite we can write if (!boolean)
 
+
+// TODO : Temperature conversion program
+
+/* 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double temp;
+    char unit;
+
+    cout << "Enter the Unit of Temperature ( using F for Fahrenheit or C for Celsius ): ";
+    cin >> unit ;
+    cout << " Enter the Temperature " ;
+    cin >> temp ;
+    ( unit ==  'F' )? temp = (temp - 32) * (5.0/9.0) : temp = ((9.0/5.0) * temp ) + 32 ;
+
+    cout << " The Temperature in " << unit << " is : " << temp ;
+}
+
+*/
+
+// ! when using a division where the denominator > numerator, use .0 to avoid getting 0
