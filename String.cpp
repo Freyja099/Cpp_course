@@ -28,7 +28,7 @@ int main ()
     }
 
 // * using length
-    if ( name.length() > 5)
+    while( name.length() > 5)
     {
         cout << " length > 5 ";
     }
