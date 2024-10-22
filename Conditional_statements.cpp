@@ -79,14 +79,18 @@ int main()
 {
     double temp;
     char unit;
-
-    cout << "Enter the Unit of Temperature ( using F for Fahrenheit or C for Celsius ): ";
-    cin >> unit ;
+    while ( unit != 'F' && unit != 'C')
+    {
+        cout << "Enter the Unit of Temperature ( using F for Fahrenheit or C for Celsius ): ";
+        cin >> unit ;
+    }
+    
+    
     cout << " Enter the Temperature " ;
     cin >> temp ;
     ( unit ==  'F' )? temp = (temp - 32) * (5.0/9.0) : temp = ((9.0/5.0) * temp ) + 32 ;
 
-    cout << " The Temperature in " << unit << " is : " << temp ;
+    cout << " The Temperature in °" << unit << " is : " << temp ;
 }
 
 */
